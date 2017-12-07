@@ -158,7 +158,7 @@ class KNearestNeighbor(object):
       # Hint: Look up the function numpy.argsort.                             #
       #########################################################################
       y_indices = np.argsort(dists[i, :], axis = 0)
-      closest_y = self.y_train[y_indices[:k]]
+      closest_y = self.y_train(y_indices[:k])
       #########################################################################
       # TODO:                                                                 #
       # Now that you have found the labels of the k nearest neighbors, you    #
